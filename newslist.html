@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width,minimum-scale=1,user-scalable=no,maximum-scale=1,initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="description" content="" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>资讯列表</title>
+  <link rel="stylesheet" href="weui/weui.min.css">
+  <link rel="stylesheet" href="weui/jquery-weui.min.css">
+  <link rel="stylesheet" href="css/mangoui-common.css">
+  <link rel="stylesheet" href="css/diy.css">
+
+</head>
+
+<body class="app-edit buyao">
+  <div class="shouyeid">
+    <div class="superli clearfix editing">
+      <div class="weui-row pjpj">
+        <div class="similar-product bgfff wd100">
+          <a href="vnews.html" class="hxbj">
+            <div class="p5 list hxbj-parent">
+              <div class="hxbj-change">
+                <div class="similar-product-text h16">女生节，中国人寿财险为勇感女性喝彩！</div>
+                <div class="chui">2020-03-02</div>
+              </div>
+              <div class="qieimg hxbj-stable" style="width:35%"><img src="images/xwww.png" alt="" style="width: 100%;">
+              </div>
+            </div>
+          </a>
+          <a href="vnews.html" class="hxbj">
+            <div class="p5 list hxbj-parent">
+              <div class="hxbj-change">
+                <div class="similar-product-text h16">服务中国人寿财险“组合拳”为疫情的企业发展</div>
+                <div class="chui">2020-03-02</div>
+              </div>
+              <div class="qieimg hxbj-stable" style="width:35%"><img src="images/xwww.png" alt="" style="width: 100%;">
+              </div>
+            </div>
+          </a>
+          <a href="vnews.html" class="hxbj">
+            <div class="p5 list hxbj-parent">
+              <div class="hxbj-change">
+                <div class="similar-product-text h16">早上空腹喝水的误区，可能很多人都喝错了</div>
+                <div class="chui">2020-03-02</div>
+              </div>
+              <div class="qieimg hxbj-stable" style="width:35%"><img src="images/xwww.png" alt="" style="width: 100%;">
+              </div>
+            </div>
+          </a>
+          <a href="vnews.html" class="hxbj">
+            <div class="p5 list hxbj-parent">
+              <div class="hxbj-change">
+                <div class="similar-product-text h16">早上空腹喝水的误区，可能很多人都喝错了</div>
+                <div class="chui">2020-03-02</div>
+              </div>
+              <div class="qieimg hxbj-stable" style="width:35%"><img src="images/xwww.png" alt="" style="width: 100%;">
+              </div>
+            </div>
+          </a>
+          <a href="vnews.html" class="hxbj">
+            <div class="p5 list hxbj-parent">
+              <div class="hxbj-change">
+                <div class="similar-product-text h16">早上空腹喝水的误区，可能很多人都喝错了</div>
+                <div class="chui">2020-03-02</div>
+              </div>
+              <div class="qieimg hxbj-stable" style="width:35%"><img src="images/xwww.png" alt="" style="width: 100%;">
+              </div>
+            </div>
+          </a>
+          <a href="vnews.html" class="hxbj">
+            <div class="p5 list hxbj-parent">
+              <div class="hxbj-change">
+                <div class="similar-product-text h16">早上空腹喝水的误区，可能很多人都喝错了</div>
+                <div class="chui">2020-03-02</div>
+              </div>
+              <div class="qieimg hxbj-stable" style="width:35%"><img src="images/xwww.png" alt="" style="width: 100%;">
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="weui/jquery.min.js"></script>
+<script src="weui/jquery-weui.min.js"></script>
+<!-- 如果使用了某些拓展插件还需要额外的JS -->
+<script src="weui/swiper.min.js"></script>
+<script src="weui/city-picker.min.js"></script>
+<script src="weui/fastclick.js"></script>
+<script src="css/font_magoui.js"></script>
+<!--彩色字体库-->
+<script>
+  $(function () {
+    FastClick.attach(document.body);
+  });
+
+  $(".swiper-container").swiper({
+    loop: true,
+    autoplay: 3000,
+    autoplayDisableOnInteraction: false,
+    /*解决手动滑动轮播图后无法自动播放问题*/
+  });
+</script>
+<script src="weui/imageCenter.js"></script>
+<!--列表图片保持比例-->
+<script>
+  $('.image-center').imageCenter({
+    size: 0.8
+  });
+</script>
+<script type="text/javascript">
+  $(function () {
+
+    var swiper = new Swiper('.switch-container', {
+      //            pagination: '.swiper-pagination',
+      slidesPerView: 1.1,
+      paginationClickable: true,
+      spaceBetween: 10,
+      freeMode: true,
+      onImagesReady: function (swiper) {
+        var divList = $(".swiper-slide.jr");
+        var contentWidth = 0;
+        $(".wipeImg").each(function (o) {
+          var imgWidth = $(this).width();
+          var $divDom = $(divList[o]);
+          $divDom.css("width", imgWidth);
+          contentWidth + imgWidth + 10;
+        });
+        //$("#wrapperPanel").css("width", contentWidth);
+      },
+      onInit: function (swiper) {
+
+      }
+    });
+  });
+</script>
+<script>
+  /**diybanner**/
+  $(function () {
+    FastClick.attach(document.body);
+  });
+</script>
